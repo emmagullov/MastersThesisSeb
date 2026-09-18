@@ -1,0 +1,187 @@
+{
+    "Applications": {
+        "FEM": {
+            "Application": "OpenSeesPy",
+            "ApplicationData": {
+                "MS_Path": "{Current_Dir}/Main_Program_updated/Framework",
+                "PA_Path": "{Current_Dir}/Main_Program_updated/Framework",
+                "mainScript": "main.py",
+                "parametersScript": "Input_uncertainty_analysis.py",
+                "postprocessScript": ""
+            }
+        },
+        "UQ": {
+            "Application": "Dakota-UQ",
+            "ApplicationData": {
+            }
+        }
+    },
+    "EDP": [
+        {
+            "length": 1,
+            "name": "a",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "b",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "c",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "d",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "e",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        },
+        {
+            "length": 1,
+            "name": "",
+            "type": "scalar"
+        }
+    ],
+    "FEM": {
+    },
+    "UQ": {
+        "parallelExecution": true,
+        "samplingMethodData": {
+            "method": "LHS",
+            "samples": 100,
+            "seed": 67
+        },
+        "saveWorkDir": false,
+        "uqType": "Forward Propagation"
+    },
+    "localAppDir": "C:/Program Files/quoFEM",
+    "randomVariables": [
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 25.9,
+            "name": "EA",
+            "refCount": 1,
+            "stdDev": 2.59,
+            "value": "RV.EA",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 5.95,
+            "name": "GAs",
+            "refCount": 1,
+            "stdDev": 0.595,
+            "value": "RV.GAs",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 2777,
+            "name": "EI",
+            "refCount": 1,
+            "stdDev": 277.7,
+            "value": "RV.EI",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 0.3,
+            "name": "poissons_ratio",
+            "refCount": 1,
+            "stdDev": 0.03,
+            "value": "RV.poissons_ratio",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 0.027,
+            "name": "avg_wall_disp",
+            "refCount": 1,
+            "stdDev": 0.0027,
+            "value": "RV.avg_wall_disp",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 20.7,
+            "name": "retaining_wall_depth",
+            "refCount": 1,
+            "stdDev": 2.07,
+            "value": "RV.retaining_wall_depth",
+            "variableClass": "Uncertain"
+        },
+        {
+            "distribution": "Normal",
+            "inputType": "Parameters",
+            "mean": 175,
+            "name": "Es",
+            "refCount": 1,
+            "stdDev": 17.5,
+            "value": "RV.Es",
+            "variableClass": "Uncertain"
+        }
+    ],
+    "remoteAppDir": "C:/Program Files/quoFEM",
+    "resultType": "SimCenterUQResultsSampling",
+    "runType": "runningLocal",
+    "summary": [
+    ],
+    "workingDir": "C:/Users/au702481/Documents\\quoFEM\\LocalWorkDir"
+}

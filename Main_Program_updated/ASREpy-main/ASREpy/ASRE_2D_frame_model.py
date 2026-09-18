@@ -1,5 +1,5 @@
 from sys import platform as pltm
-import os, platform, pkg_resources
+import os, platform
 from ctypes import CDLL, c_int, c_double, c_char_p, POINTER
 import numpy as np
 import json

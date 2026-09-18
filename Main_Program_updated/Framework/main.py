@@ -15,11 +15,21 @@ import os
 # from plotDisp import *
 
 plot_var = "yes"  # "yes" or "no" to define if plot wanted or not
-
+"""
 ASREpy_dir = os.path.join(os.path.dirname(__file__), "..", "ASREpy-main")
 sys.path.append(ASREpy_dir)
 sys.path.append("D:\Main_Program_updated\ASREpy-main")
 sys.path.append("S:\Main_Program_updated\ASREpy-main")
+"""
+
+project_dir = Path(__file__).resolve().parents[1]
+asrepy_dir = project_dir / "ASREpy-main"
+
+if not asrepy_dir.is_dir():
+    raise FileNotFoundError(f"ASREpy directory not found: {asrepy_dir}")
+
+sys.path.insert(0, str(asrepy_dir))
+
 
 Error_Variable = 0  # False
 
